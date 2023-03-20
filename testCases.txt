@@ -1,0 +1,19 @@
+2-Bit test Cases
+
+testcase1: Fixed null key
+testPass = '68'
+testHash = 'a2'
+
+testcase2: key is the inverse hash
+testHash = 'cd'
+testPass = '89'
+
+testcase3: collision
+testHash = '73'
+testPass = '42'
+result = 'a6' instead of '42'
+
+testcase4: value not in dict. Fixed by generating all possible combinations for PWs
+testPass = 'ab'
+testHash = hashlib.sha256(testPass.encode('utf-8')).hexdigest()
+testHash = testHash[:numDigits]
