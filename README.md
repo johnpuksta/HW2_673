@@ -1,4 +1,4 @@
-# ECE673 HW2 - Time-Memory Trade-Off attack
+Time-Memory Trade-Off attack
 This repo implements the Time-Memory Trade-Off attack described in this paper: https://ee.stanford.edu/~hellman/publications/36.pdf. <br />
 <br />
 The goal of this assignment is to crack SHA-256, but only the first 24 bits of it. Thus given H(X) = Y, where we are only know Y, find the first 16, 20, and 24 bits of X. <br /> <br />
